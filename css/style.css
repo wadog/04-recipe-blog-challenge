@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 969PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+header em {
+    width: 50%;
+}
+
+.heroImg {
+    width: 969px;
+    height: 470px;
+    border-radius: 15px;
+    background-image: url(img/image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card{
+    border: 1px solid yellow;
+    float: right;
+    position: relative;
+    width: 216px;
+    height: 367px;
+}
+.contenedor{
+    width: 969px;
+    margin: 0 auto;
+}
+.ingredients{
+    width: 543px;
+    border: 1px solid orange;
+}
+.instruction{
+    width: 528px;
+}
