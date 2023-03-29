@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 body {
     margin: 0;
 }
@@ -9,12 +10,36 @@ header {
     justify-content: center;
     margin: 0 auto;
     padding-bottom: 30px;
+    border: 1px solid;
 }
 
+header h1 {
+    width: 587px;
+    height: 64px;
+    left: 236px;
+    top: 49px;
+margin-bottom: 0;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+}
+.infoHeader{
+    display: flex;    
+}
 header em {
-    width: 50%;
+    width: 592px;
+    height: 51px;
+    left: 261px;
+    top: 100px;
+border: 1px solid red;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
 }
-
 .heroImg {
     width: 969px;
     height: 470px;
@@ -27,21 +52,102 @@ header em {
     margin: 0 auto;
 }
 
-.card{
-    border: 1px solid yellow;
-    float: right;
+.secciones {
+    display: flex;
+    width: 969px;
+    margin: 0 auto;
+}
+
+.card {
+    margin-top: 48px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     width: 216px;
     height: 367px;
 }
-.contenedor{
+
+.card ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+}
+
+ul li div h4 {
+    margin: 0;
+    color: #BDBDBD;
+}
+
+ul li div h3 {
+    margin: 0;
+}
+
+.card li {
+    display: flex;
+}
+
+.contenedor {
     width: 969px;
     margin: 0 auto;
 }
-.ingredients{
-    width: 543px;
-    border: 1px solid orange;
+
+.ingredients {
+    width: 528px;
 }
-.instruction{
+
+.ingredients h2 {
+    width: 128px;
+    height: 32px;
+    margin-top: 48px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.ingredients em {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ingredients form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 38px;
+    border: 1px solid red;
+}
+.ingrediente{
+    display: flex;
+}
+.ingredients form label{
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+
+height: 50px;
+width: 554px;
+left: 275px;
+top: 830px;
+border-radius: nullpx;
+
+
+}
+
+.instruction {
     width: 528px;
 }
