@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 
+
 body {
     margin: 0;
 }
@@ -7,6 +8,7 @@ body {
 header {
     width: 969PX;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -19,14 +21,22 @@ header h1 {
     left: 236px;
     top: 49px;
     margin-bottom: 0;
-    font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
 }
 
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
 .infoHeader {
     display: flex;
+    align-items: flex-start;
+}
+
+.imgInfoHeader {
+    padding-right: 10px;
 }
 
 header em {
@@ -44,7 +54,7 @@ header em {
 
 .heroImg {
     width: 969px;
-    height: 470px;
+    height: 444px;
     border-radius: 15px;
     background-image: url(img/image.jpg);
     background-position: center;
@@ -61,23 +71,27 @@ header em {
 }
 
 .card {
+    left: 150px;
     margin-top: 48px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     width: 216px;
     height: 367px;
+    float: left;
 }
 
 .card ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    align-content: center;
+    justify-content: space-around;
     list-style: none;
     height: 100%;
+    align-items: flex-start;
 }
 
 ul li div h4 {
@@ -93,9 +107,13 @@ ul li div h3 {
     display: flex;
 }
 
+.card li img {
+    width: 28.33px;
+    margin-right: 13px;
+}
+
 .contenedor {
-    width: 969px;
-    margin: 0 auto;
+    width: 599px;
 }
 
 .ingredients {
@@ -107,7 +125,6 @@ ul li div h3 {
     height: 32px;
     margin-top: 48px;
 
-    font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -115,7 +132,6 @@ ul li div h3 {
 }
 
 .ingredients em {
-    font-family: 'Playfair Display';
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
@@ -141,7 +157,6 @@ ul li div h3 {
 }
 
 .ingredients form label {
-
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -156,5 +171,11 @@ ul li div h3 {
 }
 
 .instruction {
-    width: 528px;
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
