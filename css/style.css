@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    color: #F2994A;
+    margin-right: 13px;
+}
 
 body {
     margin: 0;
+}
+
+.orange {
+    color: #F2994A;
 }
 
 header {
@@ -105,6 +118,7 @@ ul li div h3 {
 
 .card li {
     display: flex;
+    align-items: center;
 }
 
 .card li img {
@@ -178,4 +192,60 @@ ul li div h3 {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 35px;
+}
+
+.custom-list li::before {
+    content: counter(list-item);
+    counter-increment: 1;
+    position: absolute;
+    left: 0;
+    /* opacity: 0; */
+    background: #F2994A;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.source {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #BDBDBD;
+}
+
+footer{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+margin: 90px 0 20px 0;
+/* identical to box height */
+
+text-align: center;
+
+color: #828282;
+
 }
