@@ -56,6 +56,8 @@ header h1 {
 .infoHeader {
     display: flex;
     align-items: flex-start;
+    margin-top: 12px;
+    width: 320px;
 }
 
 .imgInfoHeader {
@@ -104,7 +106,6 @@ header h1 {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    justify-content: space-around;
     list-style: none;
     height: 100%;
     align-items: flex-start;
@@ -264,9 +265,11 @@ a {
 }
 
 /* MOBILE */
+
+
 @media (max-width: 376px) {
     body {
-        margin: 0 0 0 11px;
+        margin: 0 11px 0 11px;
     }
 
     header,
@@ -288,21 +291,34 @@ a {
     .heroImg {
         width: 352px;
         height: 230px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .contenedor,
     .ingredients,
     .infoHeader em {
         width: 100%;
-        font-family: Montserrat;
         font-size: 12px;
         font-style: italic;
         font-weight: 500;
         line-height: 15px;
         letter-spacing: 0em;
         text-align: left;
+    }
 
+    .ingredients form {
+        font-family: Montserrat;
+        margin: 20px 0 0 0;
+    }
+
+    .ingredients h2 {
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+margin-top: 30px;
     }
 
     .secciones {
@@ -313,18 +329,22 @@ a {
         width: 100%;
         left: 0;
         box-shadow: none;
-        margin-top: 24px;
+        margin-top: 20px;
         height: auto;
     }
 
     .card .title {
         display: flex;
-        align-items: center;
     }
 
-    .card .title div{
+    .card .title div {
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .card .title div h4 h3 {
+        margin: 0;
     }
 
     .card .title div h3 {
@@ -343,16 +363,14 @@ a {
         font-size: 8px;
         line-height: 10px;
         text-transform: uppercase;
-
-        /* Gray 4 */
-
         color: #BDBDBD;
-
     }
 
     .card ul {
         flex-wrap: nowrap;
         flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
     }
 
     .card ul li {
@@ -361,10 +379,22 @@ a {
         font-weight: 500;
         font-size: 10px;
         line-height: 12px;
-
-        /* Gray 1 */
-
         color: #333333;
+    }
 
+    .card li img {
+        width: 14.17px;
+        height: 14.17px;
+        margin-right: 0;
+    }
+
+    .ingredients h2 em {
+        font-family: 'Playfair Display', serif;
+    }
+    .instruction {
+        margin: 70px 0 0 0 ;
+    }
+    .source {
+        margin: 0;
     }
 }
